@@ -25,9 +25,7 @@ ThreeIsland_DunsparceTunnel_EventScript_Prospector:: @ 8164D60
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_NUGGET_FROM_DUNSPARCE_TUNNEL, ThreeIsland_DunsparceTunnel_EventScript_ProspectorAlreadyGaveNugget
-	specialvar VAR_RESULT, IsNationalPokedexEnabled
-	compare VAR_RESULT, TRUE
-	goto_if_eq ThreeIsland_DunsparceTunnel_EventScript_ProspectorStruckGold
+	goto_if_set FLAG_DEFEATED_E4_R1, ThreeIsland_DunsparceTunnel_EventScript_ProspectorStruckGold
 	msgbox ThreeIsland_DunsparceTunnel_Text_ProspectingForGold
 	closemessage
 	applymovement 1, Movement_FaceOriginalDirection
