@@ -2427,7 +2427,7 @@
               },
               {
                 "min_level": 38,
-                "max_level": 93,
+                "max_level": 39,
                 "species": "SPECIES_DUSCLOPS"
               },
               {
@@ -10228,7 +10228,7 @@
             ]
           }
         }
-	]
+      ]
     }
   ]
 }
